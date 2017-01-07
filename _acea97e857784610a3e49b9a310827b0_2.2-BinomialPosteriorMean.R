@@ -1,7 +1,7 @@
-n<-20 #set total trials
-x<-10 #set successes
-aprior<-1 #Set the alpha for the Beta distribution for the prior
-bprior<-1 #Set the beta for the Beta distribution for the prior
+n<-10 #set total trials
+x<-0 #set successes
+aprior<-10 #Set the alpha for the Beta distribution for the prior
+bprior<-10 #Set the beta for the Beta distribution for the prior
 
 ymax<-10 #set max y-axis
 
@@ -33,5 +33,5 @@ library(binom)
 binom.bayes(x, n, type = "central", prior.shape1 = aprior, prior.shape2 = bprior)
 binom.bayes(x, n, type = "highest", prior.shape1 = aprior, prior.shape2 = bprior)
 
-#© Daniel Lakens, 2016. 
+#? Daniel Lakens, 2016. 
 # This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. https://creativecommons.org/licenses/by-nc-sa/4.0/

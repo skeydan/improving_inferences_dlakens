@@ -1,8 +1,8 @@
 #Calculate the likelihood ratio----
-n<-1000 #set total trials
-x<-500 #set successes
+n<-280 #set total trials
+x<-143 #set successes
 H0 <- .5 #specify one hypothesis you want to compare with the likihood ratio
-H1 <- 4/10 #specify another hypothesis you want to compare with the likihood ratio (you can use 1/20, or 0.05)
+H1 <- 52/100 #specify another hypothesis you want to compare with the likihood ratio (you can use 1/20, or 0.05)
 dbinom(x,n,H0)/dbinom(x,n,H1) #Returns the likelihood ratio of H0 over H1
 dbinom(x,n,H1)/dbinom(x,n,H0) #Returns the likelihood ratio of H1 over H0
 
